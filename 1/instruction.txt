@@ -1,0 +1,52 @@
+CS350 Intro Computer Systems Homework 1
+Homework 1 on Reality Check
+Write C programs to implement the reality we discussed last week. See the details of reality in the lecture notes: reality_1 on page 4, reality_3 on page 8 and reality_4 on page 12.
+
+Use the skeleton code reality.c for reality 1 and 3 and reality4.c for reality 4.
+The skeleton code is just a guideline for those who are not familiar with or don't want to write your own. You may change the model.
+Use Makefile for managing and compiling.
+When reality is executed, your program will make necessary decisions and print the following:
+
+$ reality 5
+
+reality_1_example_1_float: f=50000.000000
+f*f=2500000000.000000 >= 0
+
+reality_1_example_1_int: i=40000
+i*i=1600000000 >= 0
+
+reality_1_example_1_int: i=50000
+i*i=-1794967296 < 0
+
+reality_1_example_2_unsigned: uix=12 uiy=34 uiz=56
+((uix+uiy)+uiz)=102 == (uix+(uiy+uiz))=102
+
+reality_1_example_2_signed: six=12 siy=34 siz=56
+((six+siy)+siz)=102 == (six+(siy+siz))=102
+
+reality_1_example_2_float: fx=1.000000e+20 fy=-1.000000e+20 fz=3.140000
+
+((fx+fy)+fz)=3.140000e+00 != (fx+(fy+fz))=0.000000e+00
+
+reality_3: n=5 iterations
+fun(0) -> 3.140000
+fun(1) -> 3.140000
+fun(2) -> 3.140000
+fun(3) -> 2.000001
+fun(4) -> 3.140000
+Segmentation fault (core dumped)
+
+$
+ 
+When reality4 is executed, your program will compute the time taken to run the two functions copyij() and copyji(), and print them as follows:
+
+$ reality4
+
+copyij(): dim=2048: elapsed=0.013 secs
+
+copyji(): dim=2048: elapsed=0.127 secs
+
+$
+
+    
+Note: the elpased times are just samples. It's very likely that your numbers will be different from these since your machine is different from the machine used to get the sample numbers above. For example, last Thursday, you saw different numbers when I executed the code on my Linux box.
