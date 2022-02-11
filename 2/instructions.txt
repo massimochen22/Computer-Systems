@@ -1,0 +1,28 @@
+CS350 Intro Computer Systems Homework 2
+Homework 2 Representing and Manipulating Numbers
+Convert the following hexa decimals to binary, unsigned integers, and integers, following the format of the practice problem 2.17 of textbook. This is not a programming assignment although I recomend you to do it in C.
+Hexa decimal	Binary	B2U8(x)	B2T8(x)
+0x0A			
+0x06			
+0x14			
+0x6B			
+0x8A			
+0x86			
+0x94			
+0xEB			
+Write a C program to compute and output exactly as shown in Figure 2.14 of textbook. Use the variables and values defined in /usr/include/limits.h. Do not hardcode them, meaning do not write these numbers directly in the program. Derive from the variables and values defined in the header file.
+For mapping between signed and unsinged using bits, refer to pages 23 and 24 of the lecture note labeled 3 and 4. Write the mapping for w=5. Follow the format in the lecture note. This is not a programming assignment although I recomend you to do it in C.
+Write a C program to demonstrate casting surprises of page 28 of lecture note labeled 3 and 4.
+For signed and unsigned addition, fill in the following table in the style of Pratice problem 2.29 of textbook for w=5:
+Type	x	y	x+y	x+(t5)y	Case
+integer					
+binary	01101	00101		
+integer					
+binary	00011	00100		
+integer					
+binary	11000	00111		
+integer					
+binary	10111	11001		
+integer					
+binary	10101	10010		
+Do problem 2.73: write a C function saturating_add.
